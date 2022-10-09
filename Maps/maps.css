@@ -1,0 +1,511 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+body{
+    background-color: #06062b;
+}
+
+
+/* NavBar */
+.container-nav{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    color: #8a8a8a;
+    justify-content: space-between;
+}
+
+.container-nav .nav-content .nav-link, 
+.dropdown .dropdown-isi .dropdown-item{
+    display: block;
+    color: #8a8a8a;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.container-nav .nav-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-nav .nav-content .nav-link:hover,
+.dropdown .dropdown-isi .dropdown-item:hover{
+    color: white;
+    background-color: #0072ff;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown .dropdown-isi{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-isi{
+    display: flex;
+}
+
+.container-nav .navbar-toggle{
+    display: none;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.sisi-kanan {
+    display: flex;
+    position: relative;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.sisi-kanan .nav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sisi-kanan .nav-logo img{
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    left: 0;
+}
+
+.sisi-kanan .nav-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.sisi-kanan .nav-register .register-isi{
+    background-color: #2d76d0;
+    border-radius: 100px;
+    padding: 10px;
+}
+.sisi-kanan .nav-register .register-isi a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Labreeze */
+.labreeze .labreeze-content {
+    background-image: url(Breeze.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labreeze .labreeze-content .labreeze-kiri{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labreeze .labreeze-content .labreeze-kiri img{
+    width: 400px;
+    height: 450px;
+}
+
+.labreeze .labreeze-content .labreeze-kanan{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #06062b; opacity: 0.7;
+}
+
+.labreeze .labreeze-content .labreeze-kanan .labreeze-text .labreeze-judul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labreeze .labreeze-content .labreeze-kanan .labreeze-text .labreeze-judul h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+}
+
+.labreeze .labreeze-content .labreeze-kanan .labreeze-text .labreeze-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.labreeze .labreeze-content .labreeze-kanan .labreeze-text .labreeze-desc p{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+/* LaBox */
+.labox .labox-content {
+    background-image: url(IceBox.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labox .labox-content .labox-kiri{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labox .labox-content .labox-kiri img{
+    width: 400px;
+    height: 450px;
+}
+
+.labox .labox-content .labox-kanan{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #06062b; opacity: 0.7;
+}
+
+.labox .labox-content .labox-kanan .labox-text .labox-judul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labox .labox-content .labox-kanan .labox-text .labox-judul h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+}
+
+.labox .labox-content .labox-kanan .labox-text .labox-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.labox .labox-content .labox-kanan .labox-text .labox-desc p{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* footer */
+
+.footer {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    background-color: black;
+}
+
+.footer .footer-kiri {
+    width: 50%;
+    height: 80px;
+    display: flex;
+}
+
+.footer .footer-kiri .footer-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #91c2ff ;
+}
+
+.footer .footer-kiri .footer-img img{
+    width: 120px;
+    height: 80px;
+}
+
+.footer .footer-kiri .footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding-left: 10px;
+}
+
+.footer .footer-kiri .footer-text .footer-judul{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer .footer-kiri .footer-text .footer-text-desc{
+    font-size: 10px;
+    font-weight: 600;
+    max-width: 300px;
+    padding-top: 10px;
+}
+
+
+.footer .footer-kanan{
+    width: 50%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.footer .footer-kanan span{
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer .footer-kanan img{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 800px){
+    /* navbar */
+    .container-nav .navbar-toggle{
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .container-nav .sisi-kiri{
+        flex-direction: column;
+    }
+
+    .container-nav .nav-content{
+        flex-direction: column;
+        display: none;
+    }
+
+    .dropdown .dropdown-isi{
+        position: relative;
+    }
+    .container-nav .sisi-kanan{
+        display: flex;
+        align-items: flex-start;
+    }
+    .container-nav .sisi-kanan .nav-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px;
+    }
+    .container-nav .sisi-kanan .nav-register{
+        margin-top: 10px;
+    }
+    /* Main */
+    .labreeze .labreeze-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .labreeze .labreeze-content .labreeze-kiri{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .labreeze .labreeze-content .labreeze-kanan{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .labox .labox-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .labox .labox-content .labox-kiri{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .labox .labox-content .labox-kanan{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   /* Footer */
+   .footer{
+        width: 100%;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .footer-kiri{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+    }
+
+    .footer .footer-kiri .footer-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 20px 0 20px; 
+        box-sizing: border-box;
+    }
+    .footer .footer-kiri .footer-img img{
+        width: 130px;
+        height: 130px;
+    }
+    .footer .footer-kiri .footer-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .footer-kiri .footer-text .footer-text-judul{
+        display: flex;
+    }
+    .footer .footer-kiri .footer-text .footer-text-judul h6{
+        font-size: 20px;
+    }
+
+    .footer .footer-kiri .footer-text .footer-text-desc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .footer .footer-kanan{
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        height: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer .footer-kanan span{
+        font-size: 20px;
+        padding: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 800px)
+{
+    .container-nav .nav-content{
+        display: flex !important;
+    }
+
+}
+
+@media only screen and (max-width: 400px)
+{
+     /* Main */
+     .labreeze .labreeze-content{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .labreeze .labreeze-content .labreeze-kiri{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .labreeze .labreeze-content .labreeze-kanan{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .labox .labox-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .labox .labox-content .labox-kiri{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .labox .labox-content .labox-kanan{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+       .labox .labox-content .labox-kiri img{
+        width: 100%;
+        height: 100%;
+    }
+    .labreeze .labreeze-content .labreeze-kiri img{
+        width: 100%;
+        height: 100%;
+    }
+    .labreeze .labreeze-content .labreeze-kanan .labreeze-text .labreeze-judul h1{
+        font-size: 50px;
+    }
+    .labreeze .labreeze-content .labreeze-kanan .labreeze-text .labreeze-desc p{
+        font-size: 25px;
+    }
+    .labox .labox-content .labox-kanan .labox-text .labox-desc p{
+        font-size: 25px;
+    }
+    .labox .labox-content .labox-kanan .labox-text .labox-desc p{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Register</title>
+    <link rel="stylesheet" href="regis.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="container-nav">
+            <div class="sisi-kiri">
+                <div class="navbar-toggle" onclick="toggleNavbarNav()">
+                    <svg viewBox="0 0 100 80" width="40" height="40" fill="black">
+                        <rect width="100" height="20"></rect>
+                        <rect y="30" width="100" height="20"></rect>
+                        <rect y="60" width="100" height="20"></rect>
+                    </svg>              
+                </div>
+                    <div class="nav-content" id="nav-content">
+                        <div class="nav-isi">
+                            <a href="./../Project HCI - Homepage/homepage.html" class="nav-link">Home</a>
+                        </div>
+                        <div class="nav-isi dropdown">
+                            <a href="" class="nav-link">Info</a>
+                            <div class="dropdown-isi">
+                                <a href="./../slider/slider.html" class="dropdown-item">Agents</a>
+                                <a href="./../Maps/Maps.html" class="dropdown-item">Maps</a>
+                                <a href="./../requirment/homepage.html" class="dropdown-item">Specs</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="sisi-kanan">
+                <div class="nav-logo">
+                    <img src="logo.png" alt="">
+                </div>
+            </div>
+        </div>  
+    </header>
+
+    <main>
+        <form>
+        <div class="title">
+            <h2>Register</h2>
+        </div>
+        <div class="username">
+            <label for="username">Username</label>
+            <input type="text" id="username">
+        </div>
+        <div class="password">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </div>
+        <div class="email">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+        </div>
+        <div class="birth">
+            <label for="birth">Date of Birth</label>
+            <input type="date" id="birth">
+        </div>
+        <div class="nationality">
+            <label for="national">Nationality</label>
+            <input type="text" id="national">
+        </div>
+        <div class="agree">
+            <div class="container-agree">
+                <input type="checkbox" id="agree">
+                <label for="agree">Agreement to user terms</label>
+            </div>
+        </div>
+        <div class="submit-btn">
+            <button type="submit" onclick="validasi()">Submit</button>
+        </div>
+        </form>
+    </main>
+
+
+
+
+
+    <script src="regis.js"></script>
+</body>
+</html>

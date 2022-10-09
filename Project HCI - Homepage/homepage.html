@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage LaForant</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <!-- Navbar -->
+    <div class="container-nav">
+        <div class="sisi-kiri">
+            <div class="navbar-toggle" onclick="toggleNavbarNav()">
+                <svg viewBox="0 0 100 80" width="40" height="40" fill="black">
+                    <rect width="100" height="20"></rect>
+                    <rect y="30" width="100" height="20"></rect>
+                    <rect y="60" width="100" height="20"></rect>
+                </svg>              
+            </div>
+                <div class="nav-content" id="nav-content">
+                    <div class="nav-isi">
+                        <a href="#Home" class="nav-link">Home</a>
+                    </div>
+                    <div class="nav-isi">
+                        <a href="#About" class="nav-link">About</a>
+                    </div>
+                    <div class="nav-isi dropdown">
+                        <a href="" class="nav-link">Info</a>
+                        <div class="dropdown-isi">
+                            <a href="./../slider/slider.html" class="dropdown-item">Agents</a>
+                            <a href="./../Maps/Maps.html" class="dropdown-item">Maps</a>
+                            <a href="./../requirment/homepage.html" class="dropdown-item">Specs</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="sisi-kanan">
+            <div class="nav-logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="nav-register">
+                <div class="register-isi">
+                    <a href="./../register/regis.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+    </header>
+    <main>
+        <div class="title" id="Home">
+            <div class="title-atas">
+                <h1>WELCOME TO</h1>
+            </div>
+            <div class="title-bawah">
+                <h1>LaForant</h1>
+            </div>
+        </div>
+        <!-- About -->
+       <div class="about" id="About">
+           <div class="about-content">
+               <div class="about-kiri">
+                   <div class="about-judul">
+                       <h2>About us</h2>
+                   </div>
+                   <div class="about-subjudul">
+                        <h4>LaForant the best FPS Game</h4>
+                   </div>
+                   <div class="about-desc">
+                        <h5>LaForant is a 5v5 fps game with precise gunplay and many types of agents with fun abilities. You need to reach 16 rounds in a game of attack and defend to win the game. Use your strategy, abilities and skills to achieve victory.</h5>
+                   </div>
+                   <div class="btn">
+                    <button class="about-inbtn">Read more</button>
+                   </div>
+               </div>
+               <div class="about-kanan">
+                    <img src="gameplay.jpg" alt="">
+               </div>
+           </div>
+       </div>
+    
+
+
+       <!-- Agents and Maps -->
+       <div class="agentMaps">
+            <div class="agent">
+                <div class="agent-content">
+                    <div class="agent-judul">
+                        <h3>Agents</h3>
+                    </div>
+                    <div class="agent-decs">
+                        <p>LaForant Features a wide range of agents with captive
+                            personalities and backstories. Find out more below.</p>
+                    </div>
+                    <div class="agent-btn">
+                        <a href="./../slider/slider.html"><button>View Agents</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="maps">
+                <div class="maps-content">
+                    <div class="maps-judul">
+                        <h3>Maps</h3>
+                    </div>
+                    <div class="maps-decs">
+                        <p>We provide a battleground with eye catching sceneries consist of two sites built with balancing in mind and a easily to remember layout.</p>
+                    </div>
+                    <div class="maps-btn">
+                        <a href="./../Maps/Maps.html"><button>View Maps</button></a>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-kiri">
+                <div class="footer-img">
+                    <img src="./logo.png" alt="">
+                </div>
+                <div class="footer-text">
+                    <div class="footer-text-judul">
+                        <h6>Copyright © 2021 LaForant</h6>
+                    </div>
+                    <div class="footer-text-desc">
+                        <p>© 2021 LaForant, Inc. and any associated logos are trademark, service marks, and/or registeredtrademarks of LaForant, Inc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-kanan">
+                <div class="atas">
+                    <span>Follow Us</span>
+                </div>
+                <div class="bawah">
+                    <a href=""><img src="IG.png" alt=""></a>
+                    <a href=""><img src="Twitter.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
